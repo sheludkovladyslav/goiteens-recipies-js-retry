@@ -10,9 +10,9 @@ export const RecipeItem = ({ recipe }) => {
   };
 
   return (
-    <article>
-      <img src={recipe.image} alt={recipe.name} />
-      <h2>{recipe.name}</h2>
+    <article className="recipe">
+      <img src={recipe.image} alt={recipe.name} className="recipe__image" />
+      <h2 className="recipe__title">{recipe.name}</h2>
       <RecipeInfo
         icons={icons}
         time={recipe.time}

@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -52,6 +57,42 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.recipes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.recipes__item {
+  display: flex;
+  flex-basis: calc((100% - 150px) / 4);
+  font-size: 18px;
+  border: 1px solid rgb(164, 164, 164);
+  border-radius: 15px;
+  padding: 20px 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.recipe__image {
+  margin-bottom: 20px;
+}
+
+.recipe__title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.recipe__info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 @media (prefers-color-scheme: light) {

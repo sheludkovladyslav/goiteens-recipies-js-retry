@@ -2,9 +2,9 @@ import { RecipeItem } from "./RecipeItem";
 
 export const RecipeList = ({ recipes }) => {
   return (
-    <ul>
+    <ul className="recipes">
       {recipes.map((recipe) => (
-        <li>
+        <li className="recipes__item">
           <RecipeItem recipe={recipe} />
         </li>
       ))}
